@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/25445aef-ae68-48de-bbde-1ff6c406b186)
-
+![image](https://github.com/user-attachments/assets/cfb76420-5435-4fcf-9a23-5d0da5f9020b)
 
 # Red Planet Analytics
 ## What is RPA?
