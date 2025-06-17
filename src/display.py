@@ -6,22 +6,22 @@ from utils import clear
 def print_sensor_data(param: int, data: dict, sol: str):
     if param in [1, 2, 3] and not sol:
         raise AttributeError("Sol is required for this option.")
-
+    print()
     match param:
         case 1:
-            print('Temperature details...')
+            print('Temperature details for sol', sol)
             print(f"Average: {data[sol]['AT']['av']} °F")
             print(f"Min: {data[sol]['AT']['mn']} °F")
             print(f"Max: {data[sol]['AT']['mx']} °F")
             print(f"Samples: {data[sol]['AT']['ct']}")
         case 2:
-            print('Pressure details...')
+            print('Pressure details for sol', sol)
             print(f"Average: {data[sol]['PRE']['av']} Pa")
             print(f"Min: {data[sol]['PRE']['mn']} Pa")
             print(f"Max: {data[sol]['PRE']['mx']} Pa")
             print(f"Samples: {data[sol]['PRE']['ct']}")
         case 3:
-            print('Wind speed details...')
+            print('Wind speed details', sol)
             print(f"Average: {data[sol]['HWS']['av']} m/s")
             print(f"Min: {data[sol]['HWS']['mn']} m/s")
             print(f"Max: {data[sol]['HWS']['mx']} m/s")
