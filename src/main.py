@@ -3,13 +3,15 @@
 from data_fetcher import fetch_data
 from display import print_sensor_data
 from utils import clear
+import requests
 
 def main():
     try:
         request_data = fetch_data()
-    except ConnectionError as e:
-        print(e)
+    except requests.exceptions.ConnectionError as e:
+        print("Connection Error, Please check your internet connection and try again!")
         return
+
 
     while True:
         clear()
